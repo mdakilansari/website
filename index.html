@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Car Company</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #010115; /* Dark blue background */
+            color: #fff; /* White text color */
+        }
+        header {
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 200px; /* Adjust the height as needed */
+            width: auto; /* Automatically adjust width based on height */
+        }
+        .logo-text {
+            font-size: 18px;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #333; /* Darker color on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+        }
+        .login-icon, .about-icon {
+            color: #fff;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+        .login-btn {
+            background-color: #fff;
+            color: #010115;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-btn:hover {
+            background-color: #ddd;
+        }
+        .about-text {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .about-btn:hover .about-text {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Electric Car Company Logo">
+            <div class="logo-text">Drive the Future</div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Vehicles</a>
+            <a href="#">Charging</a>
+            <div class="about-btn">
+                <a href="#">About Us</a>
+                <div class="about-text">
+                    <p>Explore our selection of eco-friendly electric cars and learn more about our company.</p>
+                </div>
+            </div>
+        </nav>
+        <div class="icons">
+            <span class="login-icon">&#128274;</span> <!-- Login icon -->
+            <button class="login-btn">Login</button> <!-- Login button -->
+        </div>
+    </header>
+    <section>
+        <h2>Welcome to Power Infinity!</h2>
+        <p>Explore our selection of eco-friendly electric cars and learn more about our company.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Power Infinity. All rights reserved.</p>
+    </footer>
+</body>
+</html>
